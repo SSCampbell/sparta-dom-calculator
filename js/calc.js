@@ -1,61 +1,74 @@
 document.addEventListener("DOMContentLoaded", function(){
 var textBox = document.getElementById("screen");
   var buttonNum = document.getElementsByClassName("buttonNum");
-  console.log(buttonNum);
-
+  var operatorBtn = document.getElementsByClassName("operator");
+  console.log(operatorBtn);
   buttonNum[8].addEventListener('click', function(event){
     event.stopPropagation();
-    console.log("Button Clicked");
     textBox.innerHTML = "3";
+
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[7].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "2";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[6].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "1";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[5].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "6";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[4].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "5";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[3].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "4";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[2].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "9";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+buttonNum[1].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "8";
 });
 
-buttonNum[8].addEventListener('click', function(event){
+operatorBtn[0].addEventListener('click', function(event){
   event.stopPropagation();
-  console.log("Button Clicked");
-  textBox.innerHTML = "3";
+  textBox.innerHTML = "*";
 });
+
+ operatorBtn[1].addEventListener('click', function(event){
+   event.stopPropagation();
+   textBox.innerHTML = "/";
+ });
+
+ operatorBtn[2].addEventListener('click', function(event){
+   event.stopPropagation();
+   textBox.innerHTML = "-";
+ });
+
+ operatorBtn[3].addEventListener('click', function(event){
+   event.stopPropagation();
+   textBox.innerHTML = "+";
+ });
+
+
+
+
+
+
 
 
 })

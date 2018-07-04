@@ -20,3 +20,5 @@ buttonNum[8].addEventListener('click', function(event){
 ```
 
 ## Modifying the Calculator at the beginning stages was good. Using the right procedures to access the correct classes in the HTML was useful to update and assign each button to the Calculator. The textbox was altered to display the buttons pressed into the Calculator. The only problem I had was outputting the sum created by the user. For example "3 + 3 = 6", I need to review how the program uses the operations to sum both numbers together.
+## #############FIXED#########################
+## Calculator produces the results on the textbox from reviewing the code. Ensuring to output the values you want to check will help track the movements of your code. 

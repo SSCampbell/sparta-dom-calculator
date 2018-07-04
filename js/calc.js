@@ -6,12 +6,15 @@ var clearBtn = document.getElementsByClassName("buttonClear");
 var equalsBtn = document.getElementsByClassName("equals");
 var numA = 0;
 var numB = 0;
-var opC = "";
+var opC = " ";
 
 
   clearBtn[0].addEventListener('click', function(event){
     event.stopPropagation();
     textBox.innerHTML = " ";
+    opC = " ";
+    numA = 0;
+    numB = 0;
 
 
   });
@@ -59,6 +62,7 @@ buttonNum[5].addEventListener('click', function(event){
   textBox.innerHTML = "6";
   if (numA == " ") {
     numA = 6;
+    console.log(numA);
   }
 
   else {
@@ -83,10 +87,12 @@ buttonNum[3].addEventListener('click', function(event){
   textBox.innerHTML = "4";
   if (numA == " ") {
     numA = 4;
+
   }
 
   else {
     numB = 4;
+      console.log(numB);
   }
 });
 
@@ -131,6 +137,7 @@ operatorBtn[0].addEventListener('click', function(event){
   textBox.innerHTML = "*";
   if (opC == " ") {
     opC = "*";
+    console.log("*");
   }
   else {
 
@@ -164,48 +171,48 @@ operatorBtn[0].addEventListener('click', function(event){
    textBox.innerHTML = "+";
    if (opC == " ") {
      opC = "+";
+     console.log(opC);
    }
    else {
 
    }
  });
 
-if (numA !== 0  && numB !== 0){
+
  equalsBtn[0].addEventListener('click', function(event){
    event.stopPropagation();
    if (opC == "+")
    {
-    textBox.innerHTML = numA + numB;
+    textBox.innerHTML = Number(numA) + Number(numB);
+    console.log(opC)
 
    }
 
    else if (opC == "-")
    {
-     textBox.innerHTML = numA - numB;
-
+     textBox.innerHTML = Number(numA) - Number(numB);
+console.log(opC)
    }
 
    else if (opC == "*")
    {
-     textBox.innerHTML = numA * numB;
-
+     textBox.innerHTML = Number(numA) * Number(numB);
+console.log(opC)
    }
 
    else if (opC == "/")
    {
-     textBox.innerHTML = numA / numB;
-
+     textBox.innerHTML = Number(numA) / Number(numB);
+console.log(opC)
    }
 
- })}
- 
+ })
+
 
 
  });
 
- var numA = 0;
- var numB = 0;
- var opC = "";
+
 
 
   // var equals = document.getElementById("equals");
